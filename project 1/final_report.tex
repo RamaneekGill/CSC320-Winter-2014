@@ -1,0 +1,692 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{subcaption}
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+% % % % % % % % %
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+% % % % % % % % %
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Perl} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Perl, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+\newcommand{\perlscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.pl}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Part \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Project 1} % Assignment title
+\newcommand{\hmwkDueDate}{The Prokudin-Gorskii Colour Photo Collection} % Due date
+\newcommand{\hmwkClass}{CSC320} % Course/class
+\newcommand{\hmwkClassTime}{L0101} % Class/lecture time
+\newcommand{\hmwkAuthorName}{Ramaneek Gill} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{\hmwkDueDate}\\
+\vspace{0.1in}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+%\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+\clearpage
+%----------------------------------------------------------------------------------------
+%	PART 0
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\section{Part 0}
+
+\noindent \textit{Input data}
+\newline
+The project's goal is to create a python program that automatically align the inverted blue, green, and red-filtered negatives into one colour photo. I will be using the Anaconda for a Python shell with NumPy, SciPy and MatPlotLib packages.\newline
+
+The images this project works with can be found here:\newline 
+\texttt{http://www.cs.toronto.edu/~guerzhoy/320/proj1/images.zip}\newline
+\\
+The code \textbf{p1.py} is included at the end of the report. It is easy enough to understand on its own. I will leave it to you to read it and understand how it works. I have also included the runtimes for each image alignment and its displacemnt in each figure's description. The code is run on an intel i5-3337 CPU at 1.80 GHz laptop on Windows 8.1 set on high performance battery life and each runtime is rounded to the nearest even number for every 10 milliseconds.
+\\\\
+The input is a jpg or png image that contains the blue green and red-filtered negatives in order from top to bottom, an example of this is shown Figure 1 below. Keep in mind that the png images are very large (about $10$ times larger than the jpgs). The png images have are at a resolution of $3741 \times 9656$ pixels while the jpgs are at a resolution of $394 \times 2014$ pixels. \newline
+
+\textit{Some key points: Each image was cropped $10\%$ from each side to get rid of the black borders, NCC alignment is done by subtracting the average of the image, SSD was calculated using only the overlapping area (as suggested by Michael during his office hours), and aligning the large png images used a gaussian pyramid from levels 3 to 0 to come to a satisfactory and efficient alignment.}
+
+\begin{figure*}[h!]
+    \includegraphics[scale=0.25]{00757v.jpg}
+    \caption{'00757v.jpg', a jpg input image \texttt{imshow('00757v.jpg'); show()}}
+    \label{fig:randim}
+\end{figure*}
+
+Figure 2 is a png picture, note that it is scaled to be a quarter of the size of Figure 1 in this report to show how big of an image the program will have to work with.
+
+\begin{figure*}[h!]
+    \includegraphics[scale=0.0625]{00087u.png}
+    \caption{'00089u.png', a png input image \texttt{imshow('00089u.png'); show()}}
+    \label{fig:randim}
+\end{figure*}
+
+
+
+\clearpage
+%----------------------------------------------------------------------------------------
+%	PART 1
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+
+\noindent \textit{Applying an SSD or NCC image alignment on jpg images}
+
+In part 1 I will only be concerned with aligning jpg images. I do this because before aligning the larger (png) images I first need to experiment and see if I should align images with SSD or NCC algorithms.\newline 
+
+In my program \textbf{p1.py} I first test each (jpg) image by manually assigning the image file name in the variable image\_name and alternating the value of use\_SSD between 1 and 0 this is because if use\_SSD is 1 the program will align the image with SSD, if it is 0 it will use NCC.
+(lines 137-138 of p1.py).\newline
+
+Below are various figures, read their descriptions to see which algorithm was applied (SSD xor NCC) and the specific image.\newline
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00757v.jpg}
+                \caption{Input image}
+                \label{fig:r1i}
+        \end{subfigure}%
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00757v_SSD.jpg}
+                \caption{SSD alignment\\runtime: 0.57s\\red offset:(8,-4)\\green offset:(3,1)}
+                \label{fig:r1s}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00757v_NCC.jpg}
+                \caption{NCC alignment\\runtime: 1.76s\\red offset:(5,5)\\green offset:(3,2)}
+                \label{fig:r1n}
+        \end{subfigure}
+        \caption{00757v.jpg}\label{fig:r1}
+\end{figure}
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00911v.jpg}
+                \caption{Input image}
+                \label{fig:r2i}
+        \end{subfigure}%
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00911v_SSD.jpg}
+                \caption{SSD alignment\\runtime: 0.57s\\red offset:(9,9)\\green offset:(-1,1)}
+                \label{fig:r2s}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{00911v_NCC.jpg}
+                \caption{NCC alignment\\runtime: 01.69s\\red offset:(1,0)\\green offset:(-1,1)}
+                \label{fig:r2n}
+        \end{subfigure}
+        \caption{00911v.jpg}\label{fig:r2}
+\end{figure}
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01031v.jpg}
+                \caption{Input image}
+                \label{fig:r3i}
+        \end{subfigure}%
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01031v_SSD.jpg}
+                \caption{SSD alignment\\runtime: 0.58s\\red offset:(2,4)\\green offset:(2,1)}
+                \label{fig:r3s}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01031v_NCC.jpg}
+                \caption{NCC alignment\\runtime: 01.66s\\red offset:(2,4)\\green offset:(1,1)}
+                \label{fig:r3n}
+        \end{subfigure}
+        \caption{01031v.jpg}\label{fig:r3}
+\end{figure}
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01657v.jpg}
+                \caption{Input image}
+                \label{fig:r4i}
+        \end{subfigure}%
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01657v_SSD.jpg}
+                \caption{SSD alignment\\runtime: 00.58s\\red offset:(2,8)\\green offset:(1,6)}
+                \label{fig:r4s}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01657v_NCC.jpg}
+                \caption{NCC alignment\\runtime: 01.69s\\red offset:(1,10)\\green offset:(1,5)}
+                \label{fig:r4n}
+        \end{subfigure}
+        \caption{01657v.jpg}\label{fig:r4}
+\end{figure}
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01880v.jpg}
+                \caption{Input image}
+                \label{fig:r5i}
+        \end{subfigure}%
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01880v_SSD.jpg}
+                \caption{SSD alignment\\runtime: 0.59s\\red offset:(-10,5)\\green offset:(2,5)}
+                \label{fig:r5s}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{01880v_NCC.jpg}
+                \caption{NCC alignment\\runtime: 01.94s\\red offset:(1,10)\\green offset:(2,6)}
+                \label{fig:r5n}
+        \end{subfigure}
+        \caption{01880v.jpg}\label{fig:r5}
+\end{figure}
+\clearpage
+These are only a couple of the output results. First just by analysing each image we can see that SSD's runtime is much quicker than NCC. However this speedy execution results in less than desirable alignments. NCC seems to offer optimal results at reasonable runtimes.\newline
+
+Figure 3 is a good example of NCC's longer computation resulting in better alignment. Figure 3's SSD alignment is clearly off which is shown by the 'blurry' image, but by looking closer you can actually tell that one of the red or green channel is misaligned by a significant amount of pixels. Comparing this to its NCC alignment we can conclude NCC was better in this case. Note that both of the images have an artifact on the left side (a vertical bar) this is most likely from the same vertical bar appearing on the blue filter section of the input image (the bottom one).
+\\\\
+Figure 4 shows the same result as above.
+\\\\
+Figure 5 has almost the exact same displacement vectors for both SSD and NCC alignments. This is most likely because the intensity in each of the red, blue, and green filters are similar thus producing a similiar for SSD compared to NCC. This implies that images that have similar intensities across the rgb channels can probably be aligned using SSD instead of NCC for a faster alignment, unfortunately this is usually not the case.
+\\\\
+Figure 6 shows similar results to Figure 3 and Figure 4.
+\\\\
+Figure 7 is an 'strange' result when compared to all the other input images that were processed. Both SSD and NCC did a poor job of alignment, this is probably due the different lettering on the building for the red and green filter. Since the blue filter was used as a base for the offsetting of red and green both the NCC and SSD resulted in a poor offset for the red filter. This is because the red filter is a 'more' different image compared to the blue filter than the green filter. Even with such a strange input NCC edges out SSD yet again for being more accurate.
+\\\\
+After analysing the images I can conclude that aligning images using NCC is far more superior in accuracy when compared to SSD in most results. This is the conclusion reached from the input images given by Sergei Prokudin-Gorskii for this project.
+\\\\
+\textit{Note that the vertical bars on the left and right and the horizontal bars on the top and bottom of each image is a result of a circular shifting of the image matrix with the roll() function. This can be discarded as the image is being processed but the black bars left over from deleting this data would have skewed the alignment even further and potentially would have cut out some important image context information.}
+\end{homeworkProblem}
+\clearpage
+%----------------------------------------------------------------------------------------
+%	PART 2
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+\noindent \textit{Aligning the large (png) input images.}
+\newline Aligning the large images using the same algorithm for Part 1 would result in a very poor result. This is because we are only looking for a displacement from -10 to +10 pixels for both the red and green filter. In order to align it well I have consecutively aligned each image 4 times at gaussian pyramid levels from 3 to 0. To clarify; I first aligned an image at 1/8th its size and found an offset between -80 and +80, then aligned that modified image at 1/4th its size to an offset of -40 to +40, then again at on half its size to an offset of -20 to +20 and finally one more time at its full size to an offset of -10 to +10.
+\\\\
+I aligned each image using NCC, this is because Part 1 showed NCC was a superior algorithm for alignment than SSD. Below are a couple results:
+\textit{Note: the maximum offset for each red and green filter is -150 to +150 pixels, this means that if one rgb filter from an input image was very misaligned it will always produce a bad result with this program, fortunately enough Michael supplied us with tame test inputs.}
+\clearpage
+%inserting large images here:
+
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.39\textwidth}
+                \includegraphics[width=\textwidth]{00087u.png}
+                \caption{Input image}
+                \label{fig:u1i}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.59\textwidth}
+                \includegraphics[width=\textwidth]{00087u_NCC.png}
+                \caption{NCC alignment\\runtime: 342.29s\\red offset:(55,107)\\green offset:(38,47)}
+                \label{fig:u1n}
+        \end{subfigure}
+        \caption{00087u.png}\label{fig:u1}
+\end{figure}
+
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.39\textwidth}
+                \includegraphics[width=\textwidth]{00458u.png}
+                \caption{Input image}
+                \label{fig:u2i}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.59\textwidth}
+                \includegraphics[width=\textwidth]{00458u_NCC.png}
+                \caption{NCC alignment\\runtime: 344.07s\\red offset:(32,87)\\green offset:(5,42)}
+                \label{fig:u2n}
+        \end{subfigure}
+        \caption{00458u.png}\label{fig:u2}
+\end{figure}
+
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.39\textwidth}
+                \includegraphics[width=\textwidth]{00737u.png}
+                \caption{Input image}
+                \label{fig:u3i}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.59\textwidth}
+                \includegraphics[width=\textwidth]{00737u_NCC.png}
+                \caption{NCC alignment\\runtime: 348.90s\\red offset:(14,41)\\green offset:(6,14)}
+                \label{fig:u3n}
+        \end{subfigure}
+        \caption{00737u.png}\label{fig:u3}
+\end{figure}
+
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.39\textwidth}
+                \includegraphics[width=\textwidth]{00822u.png}
+                \caption{Input image}
+                \label{fig:u4i}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.59\textwidth}
+                \includegraphics[width=\textwidth]{00822u_NCC.png}
+                \caption{NCC alignment\\runtime: 348.62s\\red offset:(33,125)\\green offset:(25,57)}
+                \label{fig:u4n}
+        \end{subfigure}
+        \caption{00822u.png}\label{fig:u4}
+\end{figure}
+
+\clearpage
+\begin{figure}
+        \centering
+        \begin{subfigure}[H]{0.39\textwidth}
+                \includegraphics[width=\textwidth]{00892u.png}
+                \caption{Input image}
+                \label{fig:u5i}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.59\textwidth}
+                \includegraphics[width=\textwidth]{00892u_NCC.png}
+                \caption{NCC alignment\\runtime: 346.19s\\red offset:(17,11)\\green offset:(10,-6)}
+                \label{fig:u5n}
+        \end{subfigure}
+        \caption{00822u.png}\label{fig:u5}
+\end{figure}
+\end{homeworkProblem}
+\clearpage
+As you can see this algorithm produces amazingly accurate results (try and zoom in on the pictures, the pdf doesn't do it justice!) and in a reasonable amount of time. Once again the artifacts on the borders of the image have to do with the roll() function in python, read the previous note to understand why it occurs and why I left it that way. You can verify the accuracy of the results by looking at small patterns in the images, ie. the foilage in the forest/trees, the wheel spokes of the train, the reflection of the water.
+\\\\
+
+\section{p1.py:}
+
+\begin{lstlisting}
+from pylab import *
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.cbook as cbook
+import random
+import time
+from scipy.misc import imread
+from scipy.misc import imresize
+import matplotlib.image as mpimg
+import os
+
+os.chdir('C:/Users/Ramaneek/SkyDrive/Documents/University/Third Year/CSC320/project 1/')
+
+matplotlib
+gray()
+
+#######################################################################
+
+#function to align img1 to img2, returns shifted img1, if use_SSD is > 0 then
+#img1 is aligned using SSD, NCC if use_SSD < 0
+def align(img1, img2, use_SSD):
+    print 'aligning ', image_name
+
+    #so we don't overwrite the original images
+    new_img1 = img1 
+    new_img2 = img2
+    
+    if use_SSD > 0:
+        x_offset, y_offset = ssd_offset(new_img1, new_img2)
+    else:
+        x_offset, y_offset = ncc_offset(new_img1, new_img2)
+        
+    #circurally shifts the matrix, this makes last elements wrap around
+    #since only affects a very small edge of the image just leave it
+    print 'total offset is (',x_offset,',',y_offset,')'
+    new_img1 = roll(new_img1, x_offset, 1)
+    new_img1 = roll(new_img1, y_offset, 0)
+    
+    return new_img1
+
+#aligning images for png files (the big images)
+#first match is done on 1/8th of img, then another time on 1/4th
+def align_png(img1, img2, use_SSD):
+    print 'aligning', image_name
+    new_img1 = img1 #refers to resized images that are passed to ncc_offset
+    new_img2 = img2 
+    aligned_img1 = new_img1 #refers to the most up to date full size aligned img
+    totalx = 0; totaly = 0
+    
+    for ratio in reversed(range(0,4)):
+        #aligning gaussian pyramid at level 3->2->1->original img size
+        new_img1 = imresize(aligned_img1, 0.5**ratio)
+        new_img2 = imresize(img2, 0.5**ratio)
+        
+        if use_SSD > 0:
+            x_offset, y_offset = ssd_offset(new_img1, new_img2)
+        else:
+            x_offset, y_offset = ncc_offset(new_img1, new_img2)
+
+        #resize offsets to coordinate with the original image size
+        #I do 2**ratio because the image was reduced 0.5**ratio
+        x_offset = int(x_offset*(2**ratio))
+        y_offset = int(y_offset*(2**ratio))
+        totalx += x_offset
+        totaly += y_offset
+        
+        print ratio,' level of gaussian pyramid offset is (',x_offset,',',y_offset,')'
+        #now make the new_img1 aligned and update aligned_img1 to point to latest update
+        aligned_img1 = roll(aligned_img1, x_offset, 1)
+        aligned_img1 = roll(aligned_img1, y_offset, 0)
+        
+        img1=img1
+
+    print 'total offset is (',totalx,',',totaly,')'
+    
+    return aligned_img1
+
+
+#function to compute SSD offset of img1 onto img2, returns tuple (x,y)
+def ssd_offset(img1, img2):
+    print 'using ssd'
+    w_height, w_width = img1.shape
+    x_final = 0; y_final = 0
+    min = Infinity
+    for x in range(-10,11): #goes from -10 to 10
+        for y in range(-10, 11):
+            img1_copy = img1 #so we can reset the image displacement every iteration
+            
+            #translate images
+            img1_copy = roll(img1_copy, x, 1)
+            img1_copy = roll(img1_copy, y, 0)
+  
+            #calculate the ssd with respect to the overlapping area (prof said this was good)
+            overlapping_area = (img1_copy.shape[0] - abs(x))*(img1_copy.shape[1] - abs(y))
+            ssd = sum((img2 - img1_copy)**2) - overlapping_area
+            
+            if ssd < min:
+                min = ssd
+                x_final = x
+                y_final = y
+    print 'finished ssd'
+    return (x_final, y_final)
+
+
+def ncc_offset(img1, img2):
+    print 'using ncc'
+    w_height, w_width = img1.shape
+    x_final = 0; y_final = 0
+    max = -Infinity
+    for x in range(-10,11): #goes from -10 to 10
+        for y in range(-10, 11):
+            img1_copy = img1
+            
+            img1_copy = roll(img1_copy, x, 1)
+            img1_copy = roll(img1_copy, y, 0)
+            
+            a_prime = img2 - mean(img2)
+            b_prime = img1_copy - mean(img1_copy)
+            
+            dot = np.dot(a_prime.flatten(), b_prime.flatten())
+            ncc = dot/(norm(a_prime.flatten())*norm(b_prime.flatten()))
+            
+            if ncc > max:
+                
+                max = ncc
+                x_final = x
+                y_final = y
+    print 'finished ncc'
+    return (x_final, y_final)
+
+########################################################################
+
+#TO USE THIS PROGRAM INPUT THE FILE NAME BELOW
+#TO USE SSD CHANGE THE 'use_SSD' variable to > 0
+#TO USE NCC CHANGE THE 'use_SSD' variable to <= 0
+
+start_time = time.time()  #for displaying time the program takes to run
+
+image_name = '01657v.jpg'
+use_SSD = 1    # >0 to use SSD, <= 0 to use NCC
+
+i = imread(image_name)
+
+if image_name[-4:] == '.png':
+    i = i/float(max(i.flatten())) #change values to 0to1
+else:
+    i = i.astype(uint8) #convert the image to uint8 just in case
+
+height, width = i.shape
+height = height/3 # each r,g,b image's height
+
+# #get rid of the common left and right borders of i, 5% should be enough
+# i = i[:, width*0.05:-width*0.05]
+
+#get the rgb channels from the photo, only need to manipulate rows
+b_i = i[:height]
+g_i = i[height:2*height]
+r_i = i[2*height:3*height]
+
+#update the height and width value to correspond with individual rgb imgs
+height, width = b_i.shape
+
+#now lets 'crop' each rgb image a little more, 10% should be enough
+b_i = b_i[width*0.1:-width*0.1, height*0.1:-height*0.1]
+g_i = g_i[width*0.1:-width*0.1, height*0.1:-height*0.1]
+r_i = r_i[width*0.1:-width*0.1, height*0.1:-height*0.1]
+
+# figure(2); imshow(b_i)
+# figure(3); imshow(g_i)
+# figure(4); imshow(r_i)
+# show()
+
+#aligned image
+if image_name[-3:] == 'png':
+    new_g_i = align_png(g_i, b_i, use_SSD)
+    new_r_i = align_png(r_i, b_i, use_SSD)
+else:
+    new_g_i = align(g_i, b_i, use_SSD)
+    new_r_i = align(r_i, b_i, use_SSD)
+
+# figure(2); imshow(b_i)
+# figure(3); imshow(g_i)
+# figure(4); imshow(r_i)
+# figure(5); imshow(b_i)
+# figure(6); imshow(new_g_i)
+# figure(7); imshow(new_r_i)
+# show()
+
+
+#combine the rgb images into one, the 3 is for adding the 3rd dimension
+size = b_i.shape
+
+if image_name[-4:] == '.png':
+    result = zeros((size[0], size[1], 3))  #because png will operate on floats
+else:
+    result = zeros((size[0], size[1], 3)).astype(uint8)
+
+result[:, :, 0] = new_r_i
+result[:, :, 1] = new_g_i
+result[:, :, 2] = b_i
+
+#save the result and then show it
+if use_SSD > 0:
+    if image_name[-4:] == '.png':
+        image_name = image_name[:-4] + '_SSD.png'
+    else:
+        image_name = image_name[:-4] + '_SSD.jpg'
+else:
+    if image_name[-4:] == '.png':
+        image_name = image_name[:-4] + '_NCC.png'
+    else:
+        image_name = image_name[:-4] + '_NCC.jpg'
+        
+imsave(image_name, result)
+
+print 'Algorithm took', -1*(start_time - time.time()),'to run'
+
+figure(1); imshow(result)
+show()
+\end{lstlisting}`
+
+\end{document}
