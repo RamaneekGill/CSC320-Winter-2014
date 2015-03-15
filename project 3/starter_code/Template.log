@@ -1,0 +1,762 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.13)  24 JAN 2015 01:23
+entering extended mode
+**C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/Template.tex
+(C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/Template.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\extramarks.sty"
+\@temptokenb=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count88
+)
+\c@subfigure=\count89
+\c@subtable=\count90
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count91
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count92
+\lst@currlwidth=\dimen112
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen115
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count99
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+\c@homeworkProblemCounter=\count100
+
+(C:\Users\Guerzhoy\Desktop\csc320\CSC320Report\Template.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 173.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count101
+\scratchdimen=\dimen116
+\scratchbox=\box28
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen117
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks18
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count107
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 175.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 175.
+ [1
+
+{C:/Users/Guerzhoy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 187.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 187.
+
+<randim.jpg, id=11, 803.0pt x 602.25pt>
+File: randim.jpg Graphic file (type jpg)
+ <use randim.jpg>
+Package pdftex.def Info: randim.jpg used on input line 191.
+(pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 192.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 12.25554pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2
+
+ <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/randim.jpg>]
+<display_save_25_comps.jpg, id=18, 803.0pt x 602.25pt>
+File: display_save_25_comps.jpg Graphic file (type jpg)
+
+<use display_save_25_comps.jpg>
+Package pdftex.def Info: display_save_25_comps.jpg used on input line 213.
+(pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
+
+Underfull \hbox (badness 1484) in paragraph at lines 214--214
+[]\OT1/cmr/m/n/10 Figure 2: |The first 25 prin-ci-pal com-po-nents of the ``a"s
+. Gen-er-ated us-ing lines 154-155 and
+ []
+
+<immean.jpg, id=19, 25.09375pt x 25.09375pt>
+File: immean.jpg Graphic file (type jpg)
+ <use immean.jpg>
+Package pdftex.def Info: immean.jpg used on input line 219.
+(pdftex.def)             Requested size: 50.18735pt x 50.18735pt.
+ [3
+
+ <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/display_save_25_comps.jpg> <C:/
+Users/Guerzhoy/Desktop/csc320/CSC320Report/immean.jpg>]
+<1pc.jpg, id=24, 25.09375pt x 25.09375pt>
+File: 1pc.jpg Graphic file (type jpg)
+ <use 1pc.jpg>
+Package pdftex.def Info: 1pc.jpg used on input line 243.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<5pc.jpg, id=25, 25.09375pt x 25.09375pt>
+File: 5pc.jpg Graphic file (type jpg)
+ <use 5pc.jpg>
+Package pdftex.def Info: 5pc.jpg used on input line 248.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<25pc.jpg, id=26, 25.09375pt x 25.09375pt>
+File: 25pc.jpg Graphic file (type jpg)
+ <use 25pc.jpg>
+Package pdftex.def Info: 25pc.jpg used on input line 253.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<100pc.jpg, id=27, 25.09375pt x 25.09375pt>
+File: 100pc.jpg Graphic file (type jpg)
+ <use 100pc.jpg>
+Package pdftex.def Info: 100pc.jpg used on input line 258.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<150pc.jpg, id=28, 25.09375pt x 25.09375pt>
+File: 150pc.jpg Graphic file (type jpg)
+ <use 150pc.jpg>
+Package pdftex.def Info: 150pc.jpg used on input line 263.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<200pc.jpg, id=29, 25.09375pt x 25.09375pt>
+File: 200pc.jpg Graphic file (type jpg)
+ <use 200pc.jpg>
+Package pdftex.def Info: 200pc.jpg used on input line 268.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<400pc.jpg, id=30, 25.09375pt x 25.09375pt>
+File: 400pc.jpg Graphic file (type jpg)
+ <use 400pc.jpg>
+Package pdftex.def Info: 400pc.jpg used on input line 273.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<all_pc.jpg, id=31, 25.09375pt x 25.09375pt>
+File: all_pc.jpg Graphic file (type jpg)
+ <use all_pc.jpg>
+Package pdftex.def Info: all_pc.jpg used on input line 278.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+Overfull \hbox (25.71852pt too wide) in paragraph at lines 242--282
+[]$[]$ $[]$$[]$
+ []
+
+
+Overfull \hbox (25.71852pt too wide) in paragraph at lines 242--282
+$[]$$[]$ $[]$
+ []
+
+[4
+
+ <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/1pc.jpg> <C:/Users/Guerzhoy/Des
+ktop/csc320/CSC320Report/5pc.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Repor
+t/25pc.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/100pc.jpg> <C:/Users
+/Guerzhoy/Desktop/csc320/CSC320Report/150pc.jpg> <C:/Users/Guerzhoy/Desktop/csc
+320/CSC320Report/200pc.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/400p
+c.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/all_pc.jpg>]
+Overfull \hbox (5.92326pt too wide) in paragraph at lines 299--303
+[]\OT1/cmr/m/n/10 Noisy im-ages are cre-ated us-ing the func-tion \OT1/pcr/m/n/
+10 salt[]and[]pepper[]noise() \OT1/cmr/m/n/10 (lines 98-106 of \OT1/pcr/m/n/10 
+pca[]example.py\OT1/cmr/m/n/10 ). 
+ []
+
+<a0reconstruction.jpg, id=36, 25.09375pt x 25.09375pt>
+File: a0reconstruction.jpg Graphic file (type jpg)
+
+<use a0reconstruction.jpg>
+Package pdftex.def Info: a0reconstruction.jpg used on input line 320.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+ <a0noise0pt05.jpg, id=37, 25.09375pt x 25.09375pt>
+File: a0noise0pt05.jpg Graphic file (type jpg)
+
+<use a0noise0pt05.jpg>
+Package pdftex.def Info: a0noise0pt05.jpg used on input line 327.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt05reconstruction200PCs.jpg, id=38, 25.09375pt x 25.09375pt>
+File: a0noise0pt05reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt05reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt05reconstruction200PCs.jpg used on input lin
+e 333.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt1.jpg, id=39, 25.09375pt x 25.09375pt>
+File: a0noise0pt1.jpg Graphic file (type jpg)
+ <use a0noise0pt1.jpg>
+Package pdftex.def Info: a0noise0pt1.jpg used on input line 340.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt1reconstruction200PCs.jpg, id=40, 25.09375pt x 25.09375pt>
+File: a0noise0pt1reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt1reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt1reconstruction200PCs.jpg used on input line
+ 346.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt2.jpg, id=41, 25.09375pt x 25.09375pt>
+File: a0noise0pt2.jpg Graphic file (type jpg)
+ <use a0noise0pt2.jpg>
+Package pdftex.def Info: a0noise0pt2.jpg used on input line 353.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt2reconstruction200PCs.jpg, id=42, 25.09375pt x 25.09375pt>
+File: a0noise0pt2reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt2reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt2reconstruction200PCs.jpg used on input line
+ 359.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt3.jpg, id=43, 25.09375pt x 25.09375pt>
+File: a0noise0pt3.jpg Graphic file (type jpg)
+ <use a0noise0pt3.jpg>
+Package pdftex.def Info: a0noise0pt3.jpg used on input line 366.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt3reconstruction200PCs.jpg, id=44, 25.09375pt x 25.09375pt>
+File: a0noise0pt3reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt3reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt3reconstruction200PCs.jpg used on input line
+ 372.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt45.jpg, id=45, 25.09375pt x 25.09375pt>
+File: a0noise0pt45.jpg Graphic file (type jpg)
+ <use a0noise0pt45.jpg>
+Package pdftex.def Info: a0noise0pt45.jpg used on input line 379.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt45reconstruction200PCs.jpg, id=46, 25.09375pt x 25.09375pt>
+File: a0noise0pt45reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt45reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt45reconstruction200PCs.jpg used on input lin
+e 385.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt60.jpg, id=47, 25.09375pt x 25.09375pt>
+File: a0noise0pt60.jpg Graphic file (type jpg)
+ <use a0noise0pt60.jpg>
+Package pdftex.def Info: a0noise0pt60.jpg used on input line 392.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a0noise0pt60reconstruction200PCs.jpg, id=48, 25.09375pt x 25.09375pt>
+File: a0noise0pt60reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a0noise0pt60reconstruction200PCs.jpg>
+Package pdftex.def Info: a0noise0pt60reconstruction200PCs.jpg used on input lin
+e 398.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2reconstruction.jpg, id=49, 25.09375pt x 25.09375pt>
+File: a2reconstruction.jpg Graphic file (type jpg)
+
+<use a2reconstruction.jpg>
+Package pdftex.def Info: a2reconstruction.jpg used on input line 412.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+ <a2noise0pt05.jpg, id=50, 25.09375pt x 25.09375pt>
+File: a2noise0pt05.jpg Graphic file (type jpg)
+
+<use a2noise0pt05.jpg>
+Package pdftex.def Info: a2noise0pt05.jpg used on input line 419.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt05reconstruction200PCs.jpg, id=51, 25.09375pt x 25.09375pt>
+File: a2noise0pt05reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt05reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt05reconstruction200PCs.jpg used on input lin
+e 425.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt1.jpg, id=52, 25.09375pt x 25.09375pt>
+File: a2noise0pt1.jpg Graphic file (type jpg)
+ <use a2noise0pt1.jpg>
+Package pdftex.def Info: a2noise0pt1.jpg used on input line 432.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt1reconstruction200PCs.jpg, id=53, 25.09375pt x 25.09375pt>
+File: a2noise0pt1reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt1reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt1reconstruction200PCs.jpg used on input line
+ 438.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt2.jpg, id=54, 25.09375pt x 25.09375pt>
+File: a2noise0pt2.jpg Graphic file (type jpg)
+ <use a2noise0pt2.jpg>
+Package pdftex.def Info: a2noise0pt2.jpg used on input line 445.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt2reconstruction200PCs.jpg, id=55, 25.09375pt x 25.09375pt>
+File: a2noise0pt2reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt2reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt2reconstruction200PCs.jpg used on input line
+ 451.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt3.jpg, id=56, 25.09375pt x 25.09375pt>
+File: a2noise0pt3.jpg Graphic file (type jpg)
+ <use a2noise0pt3.jpg>
+Package pdftex.def Info: a2noise0pt3.jpg used on input line 458.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt3reconstruction200PCs.jpg, id=57, 25.09375pt x 25.09375pt>
+File: a2noise0pt3reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt3reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt3reconstruction200PCs.jpg used on input line
+ 464.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt45.jpg, id=58, 25.09375pt x 25.09375pt>
+File: a2noise0pt45.jpg Graphic file (type jpg)
+ <use a2noise0pt45.jpg>
+Package pdftex.def Info: a2noise0pt45.jpg used on input line 471.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt45reconstruction200PCs.jpg, id=59, 25.09375pt x 25.09375pt>
+File: a2noise0pt45reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt45reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt45reconstruction200PCs.jpg used on input lin
+e 477.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt60.jpg, id=60, 25.09375pt x 25.09375pt>
+File: a2noise0pt60.jpg Graphic file (type jpg)
+ <use a2noise0pt60.jpg>
+Package pdftex.def Info: a2noise0pt60.jpg used on input line 484.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a2noise0pt60reconstruction200PCs.jpg, id=61, 25.09375pt x 25.09375pt>
+File: a2noise0pt60reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a2noise0pt60reconstruction200PCs.jpg>
+Package pdftex.def Info: a2noise0pt60reconstruction200PCs.jpg used on input lin
+e 490.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10reconstruction.jpg, id=62, 25.09375pt x 25.09375pt>
+File: a10reconstruction.jpg Graphic file (type jpg)
+
+<use a10reconstruction.jpg>
+Package pdftex.def Info: a10reconstruction.jpg used on input line 502.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt05.jpg, id=63, 25.09375pt x 25.09375pt>
+File: a10noise0pt05.jpg Graphic file (type jpg)
+ <use a10noise0pt05.jpg>
+Package pdftex.def Info: a10noise0pt05.jpg used on input line 509.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt05reconstruction200PCs.jpg, id=64, 25.09375pt x 25.09375pt>
+File: a10noise0pt05reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt05reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt05reconstruction200PCs.jpg used on input li
+ne 515.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt1.jpg, id=65, 25.09375pt x 25.09375pt>
+File: a10noise0pt1.jpg Graphic file (type jpg)
+ <use a10noise0pt1.jpg>
+Package pdftex.def Info: a10noise0pt1.jpg used on input line 522.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt1reconstruction200PCs.jpg, id=66, 25.09375pt x 25.09375pt>
+File: a10noise0pt1reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt1reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt1reconstruction200PCs.jpg used on input lin
+e 528.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt2.jpg, id=67, 25.09375pt x 25.09375pt>
+File: a10noise0pt2.jpg Graphic file (type jpg)
+ <use a10noise0pt2.jpg>
+Package pdftex.def Info: a10noise0pt2.jpg used on input line 535.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt2reconstruction200PCs.jpg, id=68, 25.09375pt x 25.09375pt>
+File: a10noise0pt2reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt2reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt2reconstruction200PCs.jpg used on input lin
+e 541.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt3.jpg, id=69, 25.09375pt x 25.09375pt>
+File: a10noise0pt3.jpg Graphic file (type jpg)
+ <use a10noise0pt3.jpg>
+Package pdftex.def Info: a10noise0pt3.jpg used on input line 548.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt3reconstruction200PCs.jpg, id=70, 25.09375pt x 25.09375pt>
+File: a10noise0pt3reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt3reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt3reconstruction200PCs.jpg used on input lin
+e 554.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt45.jpg, id=71, 25.09375pt x 25.09375pt>
+File: a10noise0pt45.jpg Graphic file (type jpg)
+ <use a10noise0pt45.jpg>
+Package pdftex.def Info: a10noise0pt45.jpg used on input line 561.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt45reconstruction200PCs.jpg, id=72, 25.09375pt x 25.09375pt>
+File: a10noise0pt45reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt45reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt45reconstruction200PCs.jpg used on input li
+ne 567.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt60.jpg, id=73, 25.09375pt x 25.09375pt>
+File: a10noise0pt60.jpg Graphic file (type jpg)
+ <use a10noise0pt60.jpg>
+Package pdftex.def Info: a10noise0pt60.jpg used on input line 574.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a10noise0pt60reconstruction200PCs.jpg, id=74, 25.09375pt x 25.09375pt>
+File: a10noise0pt60reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a10noise0pt60reconstruction200PCs.jpg>
+Package pdftex.def Info: a10noise0pt60reconstruction200PCs.jpg used on input li
+ne 580.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15reconstruction.jpg, id=75, 25.09375pt x 25.09375pt>
+File: a15reconstruction.jpg Graphic file (type jpg)
+
+<use a15reconstruction.jpg>
+Package pdftex.def Info: a15reconstruction.jpg used on input line 592.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt05.jpg, id=76, 25.09375pt x 25.09375pt>
+File: a15noise0pt05.jpg Graphic file (type jpg)
+ <use a15noise0pt05.jpg>
+Package pdftex.def Info: a15noise0pt05.jpg used on input line 599.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt05reconstruction200PCs.jpg, id=77, 25.09375pt x 25.09375pt>
+File: a15noise0pt05reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt05reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt05reconstruction200PCs.jpg used on input li
+ne 605.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt1.jpg, id=78, 25.09375pt x 25.09375pt>
+File: a15noise0pt1.jpg Graphic file (type jpg)
+ <use a15noise0pt1.jpg>
+Package pdftex.def Info: a15noise0pt1.jpg used on input line 612.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt1reconstruction200PCs.jpg, id=79, 25.09375pt x 25.09375pt>
+File: a15noise0pt1reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt1reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt1reconstruction200PCs.jpg used on input lin
+e 618.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt2.jpg, id=80, 25.09375pt x 25.09375pt>
+File: a15noise0pt2.jpg Graphic file (type jpg)
+ <use a15noise0pt2.jpg>
+Package pdftex.def Info: a15noise0pt2.jpg used on input line 625.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt2reconstruction200PCs.jpg, id=81, 25.09375pt x 25.09375pt>
+File: a15noise0pt2reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt2reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt2reconstruction200PCs.jpg used on input lin
+e 631.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt3.jpg, id=82, 25.09375pt x 25.09375pt>
+File: a15noise0pt3.jpg Graphic file (type jpg)
+ <use a15noise0pt3.jpg>
+Package pdftex.def Info: a15noise0pt3.jpg used on input line 638.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt3reconstruction200PCs.jpg, id=83, 25.09375pt x 25.09375pt>
+File: a15noise0pt3reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt3reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt3reconstruction200PCs.jpg used on input lin
+e 644.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt45.jpg, id=84, 25.09375pt x 25.09375pt>
+File: a15noise0pt45.jpg Graphic file (type jpg)
+ <use a15noise0pt45.jpg>
+Package pdftex.def Info: a15noise0pt45.jpg used on input line 651.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt45reconstruction200PCs.jpg, id=85, 25.09375pt x 25.09375pt>
+File: a15noise0pt45reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt45reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt45reconstruction200PCs.jpg used on input li
+ne 657.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt60.jpg, id=86, 25.09375pt x 25.09375pt>
+File: a15noise0pt60.jpg Graphic file (type jpg)
+ <use a15noise0pt60.jpg>
+Package pdftex.def Info: a15noise0pt60.jpg used on input line 664.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+
+<a15noise0pt60reconstruction200PCs.jpg, id=87, 25.09375pt x 25.09375pt>
+File: a15noise0pt60reconstruction200PCs.jpg Graphic file (type jpg)
+
+<use a15noise0pt60reconstruction200PCs.jpg>
+Package pdftex.def Info: a15noise0pt60reconstruction200PCs.jpg used on input li
+ne 670.
+(pdftex.def)             Requested size: 57.54698pt x 57.55547pt.
+ [5
+
+] [6 <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a0reconstruction.jpg> <C:/U
+sers/Guerzhoy/Desktop/csc320/CSC320Report/a0noise0pt05.jpg> <C:/Users/Guerzhoy/
+Desktop/csc320/CSC320Report/a0noise0pt05reconstruction200PCs.jpg> <C:/Users/Gue
+rzhoy/Desktop/csc320/CSC320Report/a0noise0pt1.jpg> <C:/Users/Guerzhoy/Desktop/c
+sc320/CSC320Report/a0noise0pt1reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desk
+top/csc320/CSC320Report/a0noise0pt2.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC3
+20Report/a0noise0pt2reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320
+/CSC320Report/a0noise0pt3.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a
+0noise0pt3reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Rep
+ort/a0noise0pt45.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a0noise0pt
+45reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a0no
+ise0pt60.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a0noise0pt60recons
+truction200PCs.jpg>] [7 <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a2recons
+truction.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a2noise0pt05.jpg> 
+<C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a2noise0pt05reconstruction200PCs
+.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a2noise0pt1.jpg> <C:/Users
+/Guerzhoy/Desktop/csc320/CSC320Report/a2noise0pt1reconstruction200PCs.jpg> <C:/
+Users/Guerzhoy/Desktop/csc320/CSC320Report/a2noise0pt2.jpg> <C:/Users/Guerzhoy/
+Desktop/csc320/CSC320Report/a2noise0pt2reconstruction200PCs.jpg> <C:/Users/Guer
+zhoy/Desktop/csc320/CSC320Report/a2noise0pt3.jpg> <C:/Users/Guerzhoy/Desktop/cs
+c320/CSC320Report/a2noise0pt3reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Deskt
+op/csc320/CSC320Report/a2noise0pt45.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC3
+20Report/a2noise0pt45reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc32
+0/CSC320Report/a2noise0pt60.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report
+/a2noise0pt60reconstruction200PCs.jpg>] [8 <C:/Users/Guerzhoy/Desktop/csc320/CS
+C320Report/a10reconstruction.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Repor
+t/a10noise0pt05.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt
+05reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10n
+oise0pt1.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt1recons
+truction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt2
+.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt2reconstruction
+200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt3.jpg> <C
+:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt3reconstruction200PCs.j
+pg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt45.jpg> <C:/Users
+/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt45reconstruction200PCs.jpg> <C
+:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a10noise0pt60.jpg> <C:/Users/Guerz
+hoy/Desktop/csc320/CSC320Report/a10noise0pt60reconstruction200PCs.jpg>] [9 <C:/
+Users/Guerzhoy/Desktop/csc320/CSC320Report/a15reconstruction.jpg> <C:/Users/Gue
+rzhoy/Desktop/csc320/CSC320Report/a15noise0pt05.jpg> <C:/Users/Guerzhoy/Desktop
+/csc320/CSC320Report/a15noise0pt05reconstruction200PCs.jpg> <C:/Users/Guerzhoy/
+Desktop/csc320/CSC320Report/a15noise0pt1.jpg> <C:/Users/Guerzhoy/Desktop/csc320
+/CSC320Report/a15noise0pt1reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/
+csc320/CSC320Report/a15noise0pt2.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320R
+eport/a15noise0pt2reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/C
+SC320Report/a15noise0pt3.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a1
+5noise0pt3reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Rep
+ort/a15noise0pt45.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a15noise0
+pt45reconstruction200PCs.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a1
+5noise0pt60.jpg> <C:/Users/Guerzhoy/Desktop/csc320/CSC320Report/a15noise0pt60re
+construction200PCs.jpg>]
+
+AED: lastpage setting LastPage
+(C:\Users\Guerzhoy\Desktop\csc320\CSC320Report\Template.aux) ) 
+Here is how much of TeX's memory you used:
+ 4601 strings out of 493921
+ 74034 string characters out of 3147273
+ 255639 words of memory out of 3000000
+ 7813 multiletter control sequences out of 15000+200000
+ 10330 words of font info for 36 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,12n,43p,622b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files
+/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+urw/courier/ucrr8a.pfb>
+Output written on Template.pdf (9 pages, 356025 bytes).
+PDF statistics:
+ 140 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+

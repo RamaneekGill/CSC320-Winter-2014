@@ -1,0 +1,84 @@
+
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="ROBOTS" CONTENT="NOARCHIVE">
+<META NAME="googleBOT" CONTENT="NOARCHIVE">
+
+<TITLE> CSC320 Project 3: Face Recognition and Classification with Eigenfaces</TITLE>
+
+</head>
+
+<BODY> 
+
+<h1> CSC320 Project 3: Face Recognition and Classification with Eigenfaces (Worth: 10%)</h1>
+<img src="paul.png" alt="paul" align="right">
+
+For this project, you will build a a system for face recognition and a system for face detection, and test them on a large(-ish) dataset of faces, getting practice with "data science"-flavour projects along the way.
+
+<h2>The Input</h2>
+You will work with a subset of the <a href = "http://vintage.winklerbros.net/facescrub.html">FaceScrub</a> dataset. The subset is available <a href = "faces_subset.txt">here</a>. The dataset consists of URLs of images with faces, as well as the bounding boxes of the faces. The format of the bounding box is as follows (from the FaceScrub readme.txt file):
+<blockquote>The format is x1,y1,x2,y2, where (x1,y1) is the coordinate of the top-left corner of the bounding box and (x2,y2) is that of the bottom-right corner, with (0,0) as the top-left corner of the image.  Assuming the image is represented as a Python Numpy array I, a face in I can be obtained as I[y1:y2, x1:x2].</blockquote>
+
+<p>You may find it helpful to use and/or modify <a href = "get_data.py">my script</a> for downloading the image data</p>.
+
+<p>I suggest that you work with the faces of the following actors: act = ['Aaron Eckhart', 'Adam Sandler',   'Adrien Brody',  'Andrea Anders',    'Ashley Benson',    'Christina Applegate',    'Dianna Agron',  'Gillian Anderson'].
+
+<p><b>For this project, you should crop out the images of the faces, convert them to grayscale, and resize them to 32x32 before proceeding further.</b></p>
+
+
+<h2>Part 1</h2>
+
+<p>Describe the dataset of faces. In particular, provide at least three examples of the images in the dataset, as well as at least three examples of cropped out faces. Comment on the quality of the annotation of the dataset: are the bounding boxes accurate? Can the cropped-out faces be aligned with each other?
+
+<h2>Part 2</h2>
+
+<p>Separate the dataset into three non-overlapping parts: the <i>training set</i> (100 face images per actor), the <i>validation set</i> (10 face images per actor), and the <i>test set</i> (10 face images per actor). For the report, describe how you did that. (Any method is fine). The training set will contain faces whose labels you assume you know. The test set and the validation set will contain faces whose labels you pretend to <i>not</i> know and will attempt to determine using the data in the training set. You will use the performance on the validation set to tune the parameters of your algorithm, and you will then report the final performance on the test set.
+
+<p>Compute the average face and the eigenfaces using the training set. Include the average face and the top 25 eigenfaces in the report. You may find code in <a href = "http://www.cs.toronto.edu/~guerzhoy/320/CSC320Report.zip">the sample project</a> to be useful.</p>
+
+<h2>Part 3</h2>
+
+<p>Write code to recognize every face in a set of faces using the top k eigenfaces, as outlined in Slide 8 of <a href = "http://www.cs.toronto.edu/~guerzhoy/320/lec/recognition.pdf">the recognition lecture</a>. Compute and report the accuracy (i.e., the percentage of faces which are assigned the correct label) on the validation set using k = 2, 5, 10, 20, 50, 80, 100, 150, 200. (I recommend using a table to display your results.) Then, for the k that produces the best recognition performance on the validation set, report the performance on the test set.
+
+<p>Note: the reason you need to use both a validation set and a test set is that picking the best k by using the validation set and then reporting the performance on the same set makes it so that you report artificially high performance. A better measure is obtained by picking the parameters of the algorithm using a validation set, and then measuring the performance on a separate test set.
+
+<p><small>The performance you obtain will likely be around 60% or a little higher</small>
+
+<p>In addition to the performance on the test set, in your report, display 5 failure cases (where the face closest in eigenspace to the test face turns out to be a different person's face.</p>
+
+<small>Note: using eigenfaces provides only a modest performance boost as compared to using SSD on the images in terms of accuracy, but it is significantly faster.</small>
+
+<h2>Part 4</h2>
+
+<p>Write code to determine, for every face in a set of faces, using the top k eigenfaces, the gender of the person. This should work in the same way as face recognition, except instead of each face being assigned a name, each face is considered to be simply either male or female. Again, use your validation set to select a k for the best performance (i.e., the proportion of faces whose gender was classified correctly), report the performance for the different k's for the validation set, and then report the results on the test set for the k that works best for the validation set.
+
+<p><small>The performance you obtain will likely be around 90% or a little higher. Note that here, we are cheating quite a bit, since the people in the training and test sets are the same.</small>
+
+
+
+
+<h2>What to submit</h2>
+<p>The project should be done using Python 2 and should run on CDF. Your report should be in PDF format. You should use LaTeX to generate the report, and submit the .tex file as well. A sample template will be posted soon. 
+
+<p><b>Using my code</b><p>
+<p>You are free to use any of the code available from the course website.
+
+<p><b>Important</b>:
+<ul>
+	<li>Readability counts! If your code isn't readable or your report doesn't make sense, they are not that useful. In addition, the TA can't read them. You will lose marks for those things. 
+	<li>It is perfectly fine to discuss general ideas with other people, <i>if you acknowledge ideas in your report that are not your own</i>. However, you must not look at other people's code, or show your code to other people, and you must not look at other people's reports, or show your report to other people. All of those things are academic offences.
+</ul>
+
+
+
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-html401"
+        alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
+  
+
+</BODY></HTML>
