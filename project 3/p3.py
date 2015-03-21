@@ -95,7 +95,12 @@ def pca(X):
     # return the projection matrix, the variance and the mean
     return V,S,mean_X
     
-    
+def get_reconstruction(V, im, mean_im, num_eigenfaces):
+    coefs = [np.dot(V[i,:], (im-mean_im)) for i in range(num_eigenfaces)]
+    new_im = mean_im.copy()
+    for i in range(len(coefs)):
+        new_im = new_im + coefs[i]*V[i, :]
+    return new_im
     
 ###############################################################################
 data = getData()
@@ -110,7 +115,29 @@ top_25_eigenfaces = np.zeros((25, 32, 32)) #keep this too
 for i in range(25):
     top_25_eigenfaces[i, :, :] = np.reshape(projection_M[i, :], (32,32))
 
-#to reshape flattened image run :  img = np.reshape(img, (32,32))
-#nprojection = np.reshape(projection_M, (32,32))
-#variance = np.reshape(variance, (32,32))
-#mean_img = np.reshape(mean_img, (32,32))
+validation_settings = [2, 5, 10, 20, 50, 80, 100, 150, 200] # the top k eigenfaces
+#store results in here
+#results[ith num faces used from validation_settings][accuracy of ith validation image's reconstruction]
+results = np.zeros((len(validation_settings), 10))
+
+for i in range(validation_set.shape[0]):
+    for setting in validation_settings:
+        #get a reconstructed face
+        reconstructed_face = get_reconstruction(projection_M, validation_set[i], mean_img, setting)
+        #compute how close that face is
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
