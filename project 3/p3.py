@@ -115,9 +115,9 @@ def display_save_25_comps(V, im_shape):
 getData() #get the data from the cropped images and fill in some of the global variables
 
 projection_M, variance, mean_img = pca(training_set)  #we actually don't even need the variance in this project
-#display_save_25_comps(projection_M, (32,32))
+display_save_25_comps(projection_M, (32,32))
 average_face = np.reshape(mean_img, (32,32)) #keep this to show later on in the report
-#imsave("report/mean_face.jpg", average_face)
+imsave("report/mean_face.jpg", average_face)
 
 validation_settings = [2, 5, 10, 20, 50, 80, 100, 150, 200] # the top k eigenfaces
 
@@ -144,6 +144,7 @@ for setting in validation_settings:
                 min = ssd_value
                 #the index of the actor's name
                 training_name_index = int(j/100)
+                raw_training_name_index = j
                 
         #print ssd_value
         #print validation_name, training_name
@@ -153,7 +154,9 @@ for setting in validation_settings:
         elif num_incorrect < 5:
             num_incorrect += 1
             print "This match was incorrect, validation image", i, "incorrectly matched actor", validation_name_index, "with ", training_name_index
-            #imsave(str(num_incorrect)+"incorrect_matched_with"+act[training_name]+".jpg", validation_set[i])
+            imsave("report/"+str(num_incorrect)+"_"+act[validation_name_index]+"_incorrectly_matched.jpg", np.reshape(validation_set[i], (32,32)))
+            imsave("report/"+str(num_incorrect)+"_"+act[training_name_index]+"_with.jpg", np.reshape(training_set[raw_training_name_index], (32,32)))
+            
 
     performance = num_correct * 100.0 / validation_set.shape[0]
     print "Performance on the validation set using", setting, "eigenfaces was: ", performance
@@ -195,7 +198,6 @@ max_performance = 0 #for determining the most correct setting for how many eigen
 best_setting = 0
 num_incorrect = 0 #for displaying incorrect matches for reporting purposes
 
-
 for setting in validation_settings:
     num_correct = 0
     for i in range(validation_set.shape[0]):
@@ -215,11 +217,13 @@ for setting in validation_settings:
         if validation_name_index >= 3 and training_name_index >= 3: #both female
             num_correct += 1
             #print "found match"
-        elif validation_name < 3 and training_name < 3: #both male
+        elif validation_name_index < 3 and training_name_index < 3: #both male
             num_correct += 1
         elif num_incorrect < 5:
             num_incorrect += 1
-            print "This match was incorrect, validation image", i, "incorrectly matched actor", validation_name_index, "with ", training_name_index
+            #print "This match was incorrect, validation image", i, "incorrectly matched actor", validation_name_index, "with ", training_name_index
+            #imsave(str(num_incorrect)+act[validation_name_index]+"gender_incorrectly_matched_with"+act[training_name_index]+".jpg")
+
         
     performance = num_correct * 100.0 / validation_set.shape[0]
     print "Performance on the validation set using", setting, "eigenfaces was: ", performance
@@ -231,7 +235,7 @@ for setting in validation_settings:
 num_correct = 0
 for i in range(test_set.shape[0]):
     test_proj_img = np.dot(projection_M[:best_setting], test_set[i] - mean_img)
-    validation_name_index = i
+    validation_name_index = int(i/10)
     #compute the closest projected training face to identify validation_set[i]
     min = Infinity
     for j in range(training_set.shape[0]):
@@ -239,15 +243,15 @@ for i in range(test_set.shape[0]):
         ssd_value = ssd(test_proj_img, train_proj_img)
         if ssd_value < min:
             min = ssd_value
-            training_name = j
+            training_name = int(j/100)
 
-    if validation_name_index >= 3 and training_name_index >= 300: #both female
+    if validation_name_index >= 3 and training_name_index >= 3: #both female
         num_correct += 1
         #print "found match"
-    elif validation_name_index < 3 and training_name_index < 300: #both male
+    elif validation_name_index < 3 and training_name_index < 3: #both male
         num_correct += 1
         
-performance = num_correct / test_set.shape[0] * 100.0
+performance = num_correct * 100.0 / test_set.shape[0] 
 print "Performance on the test set using", best_setting, "eigenfaces was: ", performance
 
 # End part 4
