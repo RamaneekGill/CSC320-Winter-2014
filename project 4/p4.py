@@ -37,11 +37,14 @@ for i in range(b1.shape[0]):
         
         for k in range(3):
             f[i,j,k] = x[k]
-            
-        if sum(f[i,j,:])/3 < 0.05:
+        
+        #if sum(b)/6 <= 0:
+        if sum(f[i,j,:])/3 < 0.06:
             alpha[i,j] = 0
         else:
             alpha[i,j] = 1
 
 imshow(alpha)
 show()
+
+new_b = imread('images/window.jpg')
