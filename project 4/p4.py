@@ -25,6 +25,12 @@ b2 = imread('images/flowers-backB.jpg')/255.0
 c2 = imread('images/flowers-compB.jpg')/255.0
 new_b = imread('images/window.jpg')/255.0
 
+b1 = imresize(imread('my-images/b1.jpg')/255.0, 0.1)
+c1 = imresize(imread('my-images/c1.jpg')/255.0, 0.1)
+b2 = imresize(imread('my-images/b2.jpg')/255.0, 0.1)
+c2 = imresize(imread('my-images/c2.jpg')/255.0, 0.1)
+new_b = imresize(imread('my-images/new-b.jpg')/255.0, 0.1)
+
 print "Read the input images"
 
 new_c = np.zeros(new_b.shape)
